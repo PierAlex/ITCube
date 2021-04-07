@@ -165,8 +165,7 @@ public final class Services {
 			}
 			CharControl += CharValue;
 			int ctrlch = CharControl / LicenseKey.length();
-			CharControl = (int) ctrlch;
-			LicenseKey = LicenseKey.concat(MyKeys.substring(CharControl, CharControl + 1));
+			LicenseKey = LicenseKey.concat(MyKeys.substring(ctrlch, ctrlch + 1));
 		}
 		return LicenseKey;
 	} 
